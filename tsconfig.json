@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                         // Set the target ECMAScript version to ES6
+    "module": "commonjs",                    // Use CommonJS module system (for Node.js)
+    "lib": ["es6", "dom"],                   // Include libraries like ES6 and DOM (for web)
+    "declaration": false,                    // Disable generation of .d.ts declaration files
+    "outDir": "./dist",                      // Compiled JS files will go into the 'dist' folder
+    "rootDir": "./src",                      // TypeScript source files are located in 'src'
+    "esModuleInterop": true,                 // Allow default imports from modules without default exports
+    "skipLibCheck": true,                    // Skip type checking of declaration files to speed up compilation
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+    "strict": true,                          // Enable strict type-checking options
+    "noImplicitAny": true,                   // Raise an error if there are variables with implicit 'any' type
+    "strictNullChecks": true,                // Ensure stricter null checks
+    "noUnusedLocals": true,                  // Report unused local variables
+    "noUnusedParameters": true,              // Report unused function parameters
+    "resolveJsonModule": true,               // Allow importing JSON modules
+    "skipDefaultLibCheck": true,             // Skip type checking for default library files
+    "moduleResolution": "node",              // Use Node.js module resolution strategy
+    "allowJs": true,                         // Allow JavaScript files to be compiled
+    "checkJs": false,                        // Disable checking JavaScript files
+    "incremental": true,                     // Enable incremental compilation for faster builds
+    "noEmitOnError": true                    // Prevent emitting output files if there are errors
+  },
+  "include": [
+    "src"                              // Include all files in the 'src' directory
+  ],
+  "exclude": [
+    "node_modules",                          // Exclude 'node_modules' directory from compilation
+    "**/*.test.ts",                          // Optionally exclude test files if you're using them
+    "**/*.spec.ts"                           // Optionally exclude spec files if you're using them
+  ]
+}
+
+
